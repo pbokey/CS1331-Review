@@ -520,6 +520,7 @@
         * ...
     * Chapter 14
         - Replaced Swing and AWT
+	- Parent is the superclass of Control and Node
         - **Must** extend javafx.application.application and implement the `start(PrimaryStage stage)` method.
         - A stage is a window for displaying a scene. You can add nodes to a scene. Panes, controls,
         and shapes are nodes. Panes can be used as the containers for nodes.
@@ -534,6 +535,7 @@
         - HBox, VBox - use .getChildren().addAll(text, button, box, pane, etc) to add stuff to the item
         - Panes - use .set(), or .setCenter() -> for BorderPanes
     * Chapter 15
+    	- Button is a subclass of Node, therefore, it can fire MouseEvent, KeyEvent, as well as ActionEvent.
         - Root class of JavaFX event class: **javafx.event.Event**. Subclasses of Event deal with action events, window events, mouse events, key events.
         - The handler object’s class must implement the corresponding event-handler interface.
         JavaFX provides a handler interface EventHandler<T extends Event>. The handler interface contains the handle(T e) method for handling
@@ -687,6 +689,7 @@
         - The parentheses can be omitted if there is only one parameter without an explicit data
         type.
 17. Data Structures
+    * A data structure is a collection of data organized in some fashion.In object-oriented thinking, a data structure is an object that stores other objects, referred to as data or elements. So some people refer a data structure as a container object or a collection object. To define a data structure is essentially to declare a class. 
     * Collections
         - One container to store a collection of elements is called a collection
         - Storing key/value pairs is called a map
@@ -797,6 +800,7 @@
         * TreeMap - can take in a LinkedHashMap and reorder it so it is ordered by keys, not by the order that you put them in
             - All of the maps can take in a map argument in the constructor and it will make the associating Data Structure based on this map
         * Collections
+	    - All methods in collections framework
             - Collections in java are a single unit of objects
             - This framework provides many interfaces (Set, List, Queue, Deque etc.)
             - And classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet etc.)
